@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyuubi.gr.AddLearnerActivity">
+
+    <EditText
+        android:id="@+id/etClassid"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="Classid"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etClassid"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/bAddLearner"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Add Learn"
+        android:layout_marginTop="58dp"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
+        android:layout_marginLeft="17dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyuubi.gr.ViewPointTeacherActivity">
+
+    <Spinner
+        android:id="@+id/sClassid"
+        android:layout_width="227dp"
+        android:layout_height="46dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView21"
+        android:layout_marginLeft="0dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:text="Class"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="27dp"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <ListView
+        android:id="@+id/lvPoint"
+        android:layout_width="364dp"
+        android:layout_height="315dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintTop_toBottomOf="@+id/sClassid"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <Button
+        android:id="@+id/bFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="16dp"
+        android:text="Find"
+        app:layout_constraintLeft_toRightOf="@+id/sClassid"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

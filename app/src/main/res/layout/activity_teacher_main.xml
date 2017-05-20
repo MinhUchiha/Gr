@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyuubi.gr.TeacherMainActivity">
+
+
+    <ImageButton
+        android:id="@+id/ibPointManager"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <ImageButton
+        android:id="@+id/ibGroup"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toRightOf="@+id/ibPointManager"
+        android:layout_marginLeft="11dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <ImageButton
+        android:id="@+id/ibCalenda"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibHomework"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintLeft_toRightOf="@+id/ibCalenda"
+        android:layout_marginLeft="11dp" />
+
+    <ImageButton
+        android:id="@+id/ibMessager"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintLeft_toRightOf="@+id/ibHomework"
+        android:layout_marginLeft="11dp" />
+
+    <ImageButton
+        android:id="@+id/ibUser"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toRightOf="@+id/ibGroup"
+        android:layout_marginLeft="11dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="-7dp"
+        android:text="Group"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/ibGroup" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        android:text="User Profile"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/ibUser" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:text="Point Manager"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibPointManager" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        android:text="Homework"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/ibHomework" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="0dp"
+        android:text="Massanger"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/ibMessager" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="0dp"
+        android:text="Calenda"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibCalenda" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kyuubi.gr.UserManagerActivity">
+
+    <ImageButton
+        android:id="@+id/ibCreateUser"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Create User"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ibCreateUser"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibResetPassword"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintLeft_toRightOf="@+id/ibCreateUser"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Reset Password"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/textView6"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ibResetPassword" />
+
+    <ImageButton
+        android:id="@+id/ibDeleteUser"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintLeft_toRightOf="@+id/ibResetPassword"
+        android:layout_marginLeft="14dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Detele User"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/ibDeleteUser"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="14dp" />
+</android.support.constraint.ConstraintLayout>
