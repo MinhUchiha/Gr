@@ -79,8 +79,14 @@ public class LoginActivity extends AppCompatActivity {
                                     intent.putExtra("role", role);
                                     intent.putExtra("username", username);
                                     LoginActivity.this.startActivity(intent);
-                                }else{
+                                }else if(role.equals("3")){
                                     Intent intent = new Intent(LoginActivity.this, AllMainActivity.class);
+                                    intent.putExtra("name", name);
+                                    intent.putExtra("role", role);
+                                    intent.putExtra("username", username);
+                                    LoginActivity.this.startActivity(intent);
+                                }else if(role.equals("4")){
+                                    Intent intent = new Intent(LoginActivity.this, ParentMainActivity.class);
                                     intent.putExtra("name", name);
                                     intent.putExtra("role", role);
                                     intent.putExtra("username", username);

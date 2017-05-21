@@ -59,7 +59,7 @@
         <activity android:name=".ViewPointTeacherActivity" />
         <activity android:name=".AllMainActivity" />
         <activity android:name=".UserActivity" />
-        <activity android:name=".CalendaTeacherActivity" />
+        <activity android:name=".CalendaActivity" />
         <activity android:name=".HomeworkActivity" />
         <activity android:name=".AddHomeworkActivity" />
         <activity android:name=".ViewHomework" />
@@ -67,7 +67,10 @@
         <activity android:name=".GroupTeacherActivity" />
         <activity android:name=".GroupActivity" />
         <activity android:name=".ViewPointActivity" />
-        <activity android:name=".GroupAllActivity"></activity>
+        <activity android:name=".GroupAllActivity" />
+        <activity android:name=".ParentMainActivity" />
+        <activity android:name=".ViewPointLearnerActivity" />
+        <activity android:name=".CommentActivity"></activity>
     </application>
 
 </manifest>

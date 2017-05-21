@@ -72,7 +72,7 @@ public class TeacherMainActivity extends AppCompatActivity {
         });
         ibCalenda.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(TeacherMainActivity.this,CalendaTeacherActivity.class);
+                Intent intent = new Intent(TeacherMainActivity.this,CalendaActivity.class);
                 TeacherMainActivity.this.startActivity(intent);
             }
         });

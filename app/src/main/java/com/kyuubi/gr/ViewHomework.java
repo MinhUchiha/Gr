@@ -16,6 +16,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.kyuubi.gr.request.AddHomeworkRequest;
+import com.kyuubi.gr.request.GetClassLearnerRequest;
 import com.kyuubi.gr.request.GetClassTeacherRequest;
 import com.kyuubi.gr.request.GetHomeworkRequest;
 
@@ -37,6 +38,10 @@ public class ViewHomework extends AppCompatActivity {
 
         final Spinner sClassid = (Spinner) findViewById(R.id.sClassid);
         final EditText etContent = (EditText) findViewById(R.id.etContent);
+
+        SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
+        final String username = share.getString("username", "");
+        final Integer role = share.getInt("role",0);
 
         adapter = new ArrayAdapter<String>(ViewHomework.this, android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -77,27 +82,47 @@ public class ViewHomework extends AppCompatActivity {
             }
         });
         if (spinnerArray.size() == 0) {
-            Response.Listener<String> responseListener = new Response.Listener<String>() {
-                public void onResponse(String response) {
-                    try {
-                        JSONObject jsonResponse = new JSONObject(response);
-                        boolean success = jsonResponse.getBoolean("success");
-                        JSONArray listclass = jsonResponse.getJSONArray("classid");
-                        for (int i = 0; i < listclass.length(); i++) {
-                            JSONObject jsonclass = listclass.getJSONObject(i);
-                            spinnerArray.add(jsonclass.getString("classid"));
+            if(role == 2) {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            JSONArray listclass = jsonResponse.getJSONArray("classid");
+                            for (int i = 0; i < listclass.length(); i++) {
+                                JSONObject jsonclass = listclass.getJSONObject(i);
+                                spinnerArray.add(jsonclass.getString("classid"));
+                            }
+                            adapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
-                        adapter.notifyDataSetChanged();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
                     }
-                }
-            };
-            SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
-            String username = share.getString("username", "");
-            GetClassTeacherRequest getClassTeacherRequest = new GetClassTeacherRequest(username, responseListener);
-            RequestQueue queue = Volley.newRequestQueue(ViewHomework.this);
-            queue.add(getClassTeacherRequest);
+                };
+                GetClassTeacherRequest getClassTeacherRequest = new GetClassTeacherRequest(username, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(ViewHomework.this);
+                queue.add(getClassTeacherRequest);
+            }else{
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            JSONArray listclass = jsonResponse.getJSONArray("classid");
+                            for (int i = 0; i < listclass.length(); i++) {
+                                JSONObject jsonclass = listclass.getJSONObject(i);
+                                spinnerArray.add(jsonclass.getString("classid"));
+                            }
+                            adapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(username, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(ViewHomework.this);
+                queue.add(getClassLearnerRequest);
+            }
         } else {
             adapter.notifyDataSetChanged();
         }

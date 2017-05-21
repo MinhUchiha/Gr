@@ -69,7 +69,7 @@ public class UserActivity extends AppCompatActivity {
                                 Toast.makeText(UserActivity.this,"Update complete",Toast.LENGTH_SHORT).show();
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(UserActivity.this);
-                                builder.setMessage("Create Class Failed")
+                                builder.setMessage("Update Failed")
                                         .setNegativeButton("Retry", null)
                                         .create()
                                         .show();
@@ -83,7 +83,6 @@ public class UserActivity extends AppCompatActivity {
                 EditUserRequest editUserRequest = new EditUserRequest(username, name, role ,date, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(UserActivity.this);
                 queue.add(editUserRequest);
-                Toast.makeText(UserActivity.this,"Update complete",Toast.LENGTH_SHORT);
             }
         });
 

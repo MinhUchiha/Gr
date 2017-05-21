@@ -16,6 +16,7 @@ import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.kyuubi.gr.request.GetClassLearnerRequest;
 import com.kyuubi.gr.request.GetClassTeacherRequest;
+import com.kyuubi.gr.request.GetLearnerRelationshipRequest;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -35,6 +36,9 @@ public class GroupAllActivity extends AppCompatActivity {
 
         final Spinner sClassid = (Spinner) findViewById(R.id.sClassid);
         final Button bGroupSelect = (Button) findViewById(R.id.bGroupSelect);
+        SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
+        String username = share.getString("username", "");
+        int role = share.getInt("role",0);
 
         adapter = new ArrayAdapter<String>(GroupAllActivity.this, android.R.layout.simple_spinner_item, spinnerArray);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -54,27 +58,67 @@ public class GroupAllActivity extends AppCompatActivity {
             }
         });
         if (spinnerArray.size() == 0) {
-            Response.Listener<String> responseListener = new Response.Listener<String>() {
-                public void onResponse(String response) {
-                    try {
-                        JSONObject jsonResponse = new JSONObject(response);
-                        boolean success = jsonResponse.getBoolean("success");
-                        JSONArray listclass = jsonResponse.getJSONArray("classid");
-                        for (int i = 0; i < listclass.length(); i++) {
-                            JSONObject jsonclass = listclass.getJSONObject(i);
-                            spinnerArray.add(jsonclass.getString("classid"));
+            if(role == 3) {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            JSONArray listclass = jsonResponse.getJSONArray("classid");
+                            for (int i = 0; i < listclass.length(); i++) {
+                                JSONObject jsonclass = listclass.getJSONObject(i);
+                                spinnerArray.add(jsonclass.getString("classid"));
+                            }
+                            adapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
-                        adapter.notifyDataSetChanged();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
                     }
-                }
-            };
-            SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
-            String username = share.getString("username", "");
-            GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(username, responseListener);
-            RequestQueue queue = Volley.newRequestQueue(GroupAllActivity.this);
-            queue.add(getClassLearnerRequest);
+                };
+                GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(username, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(GroupAllActivity.this);
+                queue.add(getClassLearnerRequest);
+            }
+            if(role == 4){
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject jsonResponse = new JSONObject(response);
+                            boolean success = jsonResponse.getBoolean("success");
+                            JSONArray listclass = jsonResponse.getJSONArray("listrelationship");
+                            for (int i = 0; i < listclass.length(); i++) {
+                                JSONObject jsonlearner = listclass.getJSONObject(i);
+                                Response.Listener<String> responseListener = new Response.Listener<String>() {
+                                    public void onResponse(String response) {
+                                        try {
+                                            JSONObject jsonResponse = new JSONObject(response);
+                                            boolean success = jsonResponse.getBoolean("success");
+                                            JSONArray listclass = jsonResponse.getJSONArray("classid");
+                                            for (int j = 0; j < listclass.length(); j++) {
+                                                JSONObject jsonclass = listclass.getJSONObject(j);
+                                                spinnerArray.add(jsonclass.getString("classid"));
+                                            }
+                                            adapter.notifyDataSetChanged();
+                                        } catch (JSONException e) {
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                };
+                                GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(jsonlearner.getString("learner"), responseListener);
+                                RequestQueue queue = Volley.newRequestQueue(GroupAllActivity.this);
+                                queue.add(getClassLearnerRequest);
+                            }
+                            adapter.notifyDataSetChanged();
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                };
+                GetLearnerRelationshipRequest getLearnerRelationshipRequest = new GetLearnerRelationshipRequest(username, responseListener);
+                RequestQueue queue = Volley.newRequestQueue(GroupAllActivity.this);
+                queue.add(getLearnerRelationshipRequest);
+                adapter.notifyDataSetChanged();
+            }
         } else {
             adapter.notifyDataSetChanged();
         }

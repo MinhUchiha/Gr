@@ -5,11 +5,7 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -26,6 +22,10 @@ public class AllMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_main);
 
+        SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
+        final String username = share.getString("username", "");
+        final Integer role = share.getInt("role",0);
+
         final ImageButton ibViewPoint = (ImageButton) findViewById(R.id.ibViewPoint);
         final ImageButton ibGroup = (ImageButton) findViewById(R.id.ibGroup);
         final ImageButton ibUser = (ImageButton) findViewById(R.id.ibUser);
@@ -36,6 +36,9 @@ public class AllMainActivity extends AppCompatActivity {
 
         ibViewPoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                Intent intent = new Intent(AllMainActivity.this,ViewPointLearnerActivity.class);
+                intent.putExtra("learner",username);
+                AllMainActivity.this.startActivity(intent);
             }
         });
         ibGroup.setOnClickListener(new View.OnClickListener(){
@@ -46,8 +49,6 @@ public class AllMainActivity extends AppCompatActivity {
         });
         ibUser.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
-                String username = share.getString("username","");
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -76,13 +77,14 @@ public class AllMainActivity extends AppCompatActivity {
         });
         ibCalenda.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(AllMainActivity.this,CalendaTeacherActivity.class);
+                Intent intent = new Intent(AllMainActivity.this,CalendaActivity.class);
                 AllMainActivity.this.startActivity(intent);
             }
         });
         ibHomework.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
+                Intent intent = new Intent(AllMainActivity.this,ViewHomework.class);
+                AllMainActivity.this.startActivity(intent);
             }
         });
         ibMesseger.setOnClickListener(new View.OnClickListener(){
@@ -90,5 +92,9 @@ public class AllMainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void onBackPressed(){
+
     }
 }

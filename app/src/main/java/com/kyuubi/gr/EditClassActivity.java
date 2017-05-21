@@ -49,7 +49,7 @@ public class EditClassActivity extends AppCompatActivity {
                                 EditClassActivity.this.startActivity(intent);
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(EditClassActivity.this);
-                                builder.setMessage("Create Class Failed")
+                                builder.setMessage("Edit Class Failed")
                                         .setNegativeButton("Retry", null)
                                         .create()
                                         .show();
