@@ -2,256 +2,121 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_535d31812ccba3803ce677314113c62ad2b26686\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\8e8ad27e0c313e868bc1ca3876014821b470aa9d\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_8ae6878be208cca9ec02e4fdf6f68c2b21d9707c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_00a790885d947ca2d9e16dabd8a0d435e9287d14.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\8e8ad27e0c313e868bc1ca3876014821b470aa9d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8ae6878be208cca9ec02e4fdf6f68c2b21d9707c\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\add163afe56b331c65c8bd3c00d754978b63d9fd\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2a2de4053067ca81fd65bc122702e5614dbb3055\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\add163afe56b331c65c8bd3c00d754978b63d9fd\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_2a2de4053067ca81fd65bc122702e5614dbb3055.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\28ee701065d99e0e75221dc43e236d3af7fe8673\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1bcbfeb34c56762cb801d30e5dfa8f70a5679f13\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_00a790885d947ca2d9e16dabd8a0d435e9287d14\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\993144646faa225383eec6330e34e351de81f785\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d83f0f5b7349adc95f8ddfd085989dc8035a030\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\e1482e1ac91950366c72e41d503057f066a9b5ac\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_57d97971e44d52332e33fc791c31a843b0157895.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\993144646faa225383eec6330e34e351de81f785\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_2d83f0f5b7349adc95f8ddfd085989dc8035a030.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\28ee701065d99e0e75221dc43e236d3af7fe8673\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_1bcbfeb34c56762cb801d30e5dfa8f70a5679f13.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\e1482e1ac91950366c72e41d503057f066a9b5ac\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_57d97971e44d52332e33fc791c31a843b0157895\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_8b3fff35d4fb4ce08aa8ab0daab86dbd9a683b1a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\a0e7185bf72df1c63ed51b52e639674d6c8cadd5\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3a8bf6d464d4e9b89a72da402a69e51ae10722fc\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\4d74c9e16b713596921f91403c1aadf40df409c2\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_361ffb859b144a743919c3e53a46aaa5c3e7e94e.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\4d74c9e16b713596921f91403c1aadf40df409c2\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_361ffb859b144a743919c3e53a46aaa5c3e7e94e\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\c61c572478f087a5fccc09da43ef8b0ddd85dcdc\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c86760fda410fd99920250c0234b827e120b629d\classes.dex" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Administrator\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jar="C:\Users\LUUNGHIA\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_8b3fff35d4fb4ce08aa8ab0daab86dbd9a683b1a.jar" />
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_35323d800a7376722ed5abb54362bd9cce73a38b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\c61c572478f087a5fccc09da43ef8b0ddd85dcdc\output\jars\classes.jar"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.2_1cd94085a558d19fcbf527173598f7db37cb9d3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_59a08a82b6f89fdfa8591d7516fac18b8cb10bb8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_c86760fda410fd99920250c0234b827e120b629d.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\8f85fb130ed98c2aeab5560e2710e4d671cca0ee\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_522c957460680bcbef4e60c2bc85d07b4cf00c99\classes.dex" />
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_a35f4d45a9f26f5b322bd47471452fcf7f9fa3b4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\8f85fb130ed98c2aeab5560e2710e4d671cca0ee\output\jars\classes.jar"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_60ae481ef4a3cebde6cbdc025eba3ce208dcb4dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_ebc87b4255e6d7182acccb1d83dc229430ab05ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_108718b72498182d6ddd63beed1e1e3ab31c39cb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_522c957460680bcbef4e60c2bc85d07b4cf00c99.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="7933e4f96ccf707643d94d846e237f195e0b9225">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_143c1b3bb4fe2471a199343d6121cb447a45fef4\classes.dex" />
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_e6b27fc7d8366aada7a97c70c71315eee9418dfe.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\a0e7185bf72df1c63ed51b52e639674d6c8cadd5\output\jars\classes.jar"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.volley\volley\1.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.volley-volley-1.0.0_8e347f2ad3d39b370ff285ed4915d1d086c02392.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_3a8bf6d464d4e9b89a72da402a69e51ae10722fc.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\a2c55c290a001239a96ef24ffec4f87e3154c98d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f31d80fd1833d74f8cdad4356d92635552355e97\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Administrator\.android\build-cache\d86976eb481936d04cd9f3ad0dd2d62f39bf3876\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.3"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_624f2187f593c76db4353167fcbf816a7cfdc378\classes.dex" />
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_4098eb5bf7cc34896a7534f405c77870fd41b834.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\a2c55c290a001239a96ef24ffec4f87e3154c98d\output\jars\classes.jar"
+        jar="C:\Users\LUUNGHIA\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_0ee3ee1cc93a1813c5a5f5d9fc84fd2347ac34c6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_f31d80fd1833d74f8cdad4356d92635552355e97.jar" />
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_c8d73b38757cacaf9685439c34933c7605547d23.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.android\build-cache\d86976eb481936d04cd9f3ad0dd2d62f39bf3876\output\jars\classes.jar"
+        jar="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="D:\AndroidLoginAndRegistration v2\GR\app\build\intermediates\pre-dexed\debug\classes_624f2187f593c76db4353167fcbf816a7cfdc378.jar" />
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="D:\LEARNING\Android_Studio\Gr-1\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_a112187bc0b4f5f98fbf1eb178d1630b4517cad7.jar" />
     </item>
 
 </items>
