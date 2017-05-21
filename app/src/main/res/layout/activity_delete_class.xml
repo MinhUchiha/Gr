@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#23b4c5"
     tools:context="com.kyuubi.gr.DeleteClassActivity">
 
     <EditText
@@ -16,7 +17,12 @@
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginLeft="17dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/bDeleteClass"
@@ -26,5 +32,9 @@
         android:text="Delete Class"
         app:layout_constraintTop_toBottomOf="@+id/etClassid"
         android:layout_marginLeft="17dp"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#ec6a6b"/>
 </android.support.constraint.ConstraintLayout>

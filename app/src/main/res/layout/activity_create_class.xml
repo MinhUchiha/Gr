@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#23b4c5"
     tools:context="com.kyuubi.gr.CreateClassActivity">
 
     <EditText
@@ -15,7 +16,12 @@
         android:inputType="textPersonName"
         app:layout_constraintTop_toTopOf="parent"
         android:hint="Classid"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_editor_absoluteX="42dp"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
 
     <EditText
         android:id="@+id/etClassName"
@@ -26,7 +32,12 @@
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/etClassid"
         android:hint="Class name"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_editor_absoluteX="42dp"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
 
     <EditText
         android:id="@+id/etSetember"
@@ -37,7 +48,12 @@
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/etClassName"
         android:hint="Setember"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_editor_absoluteX="42dp"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
 
     <EditText
         android:id="@+id/etTime"
@@ -48,16 +64,12 @@
         android:hint="Time"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/etSetember"
-        tools:layout_editor_absoluteX="42dp" />
-
-    <Button
-        android:id="@+id/bCreateClass"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="19dp"
-        android:text="Create"
-        app:layout_constraintTop_toBottomOf="@+id/etTeacher"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_editor_absoluteX="42dp"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
 
     <EditText
         android:id="@+id/etTeacher"
@@ -68,5 +80,22 @@
         android:hint="Teacher"
         android:inputType="textPersonName"
         app:layout_constraintTop_toBottomOf="@+id/etTime"
-        tools:layout_editor_absoluteX="42dp" />
+        tools:layout_editor_absoluteX="42dp"
+        android:background="@drawable/style_edit_text"
+        android:textColorHint="#23b45c"
+        android:textColor="#23b4c5"
+        android:paddingLeft="20dp"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/bCreateClass"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        android:text="Create"
+        app:layout_constraintTop_toBottomOf="@+id/etTeacher"
+        tools:layout_editor_absoluteX="42dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:background="#ec6a6b"/>
 </android.support.constraint.ConstraintLayout>
