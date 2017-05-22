@@ -78,18 +78,21 @@ public class AllMainActivity extends AppCompatActivity {
         ibCalenda.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(AllMainActivity.this,CalendaActivity.class);
+                intent.putExtra("learner",username);
                 AllMainActivity.this.startActivity(intent);
             }
         });
         ibHomework.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Intent intent = new Intent(AllMainActivity.this,ViewHomework.class);
+                intent.putExtra("learner",username);
                 AllMainActivity.this.startActivity(intent);
             }
         });
         ibMesseger.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
+                Intent intent = new Intent(AllMainActivity.this,ChatListActivity.class);
+                AllMainActivity.this.startActivity(intent);
             }
         });
     }

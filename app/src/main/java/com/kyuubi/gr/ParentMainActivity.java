@@ -36,6 +36,9 @@ public class ParentMainActivity extends AppCompatActivity {
 
         ibViewPoint.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                Intent intent = new Intent(ParentMainActivity.this,SelectLearnerActivity.class);
+                intent.putExtra("id",3);
+                ParentMainActivity.this.startActivity(intent);
             }
         });
         ibGroup.setOnClickListener(new View.OnClickListener(){
@@ -74,20 +77,26 @@ public class ParentMainActivity extends AppCompatActivity {
         });
         ibCalenda.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(ParentMainActivity.this,CalendaActivity.class);
+                Intent intent = new Intent(ParentMainActivity.this,SelectLearnerActivity.class);
+                intent.putExtra("id",1);
                 ParentMainActivity.this.startActivity(intent);
             }
         });
         ibHomework.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(ParentMainActivity.this,ViewHomework.class);
+                Intent intent = new Intent(ParentMainActivity.this,SelectLearnerActivity.class);
+                intent.putExtra("id",2);
                 ParentMainActivity.this.startActivity(intent);
             }
         });
         ibMesseger.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
+                Intent intent = new Intent(ParentMainActivity.this,ChatListActivity.class);
+                ParentMainActivity.this.startActivity(intent);
             }
         });
+    }
+    public void onBackPressed(){
+
     }
 }

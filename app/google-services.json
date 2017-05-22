@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1059613172257",
+    "firebase_url": "https://chatgr-142fc.firebaseio.com",
+    "project_id": "chatgr-142fc",
+    "storage_bucket": "chatgr-142fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059613172257:android:137f7baed44701b1",
+        "android_client_info": {
+          "package_name": "com.kyuubi.gr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1059613172257-lua3hfc39cvsahuc3b9ugdpmb661adip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ8qwzn6mrGKKCw5G-KZtCSotweLFLm7M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

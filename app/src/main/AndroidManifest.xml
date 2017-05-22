@@ -70,7 +70,10 @@
         <activity android:name=".GroupAllActivity" />
         <activity android:name=".ParentMainActivity" />
         <activity android:name=".ViewPointLearnerActivity" />
-        <activity android:name=".CommentActivity"></activity>
+        <activity android:name=".CommentActivity" />
+        <activity android:name=".SelectLearnerActivity" />
+        <activity android:name=".ChatListActivity" />
+        <activity android:name=".ChatRoomActivity"></activity>
     </application>
 
 </manifest>

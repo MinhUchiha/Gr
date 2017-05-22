@@ -84,7 +84,8 @@ public class TeacherMainActivity extends AppCompatActivity {
         });
         ibMessager.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-
+                Intent intent = new Intent(TeacherMainActivity.this,ChatListActivity.class);
+                TeacherMainActivity.this.startActivity(intent);
             }
         });
     }

@@ -1,5 +1,6 @@
 package com.kyuubi.gr;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,6 +32,9 @@ public class CalendaActivity extends AppCompatActivity {
         SharedPreferences share = getSharedPreferences("user", MODE_PRIVATE);
         final String username = share.getString("username","");
         final Integer role = share.getInt("role",0);
+
+        Intent intent = getIntent();
+        final String learner= intent.getStringExtra("learner");
         final List<Classtime> classtimeList = new ArrayList<Classtime>();
         final ArrayAdapter<Classtime> arrayAdapter
                 = new ArrayAdapter<Classtime>(this, android.R.layout.simple_list_item_activated_1 , classtimeList);
@@ -77,7 +81,7 @@ public class CalendaActivity extends AppCompatActivity {
                         }
                     }
                 };
-                GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(username, responseListener);
+                GetClassLearnerRequest getClassLearnerRequest = new GetClassLearnerRequest(learner, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(CalendaActivity.this);
                 queue.add(getClassLearnerRequest);
             }
